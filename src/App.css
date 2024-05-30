@@ -1,0 +1,123 @@
+body {
+  font-family: "Roboto", Arial, sans-serif; /* Use a more elegant font */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000; /* Change to black background */
+}
+
+.app {
+  width: 330px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white; /* White background */
+  border-radius: 10px; /* Smooth, slightly increased border radius */
+  display: flex;
+  flex-direction: column;
+  height: 740px; /* Slightly reduced height for better spacing */
+}
+
+.search-container {
+  background: #ffffff; /* Match the container background */
+}
+
+.table-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  background: #f5f3f3; /* Slightly lighter for the table container */
+  color: #000000;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Background color with opacity */
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow around the table */
+}
+
+input[type="text"] {
+  width: 100%; /* Make input take full width of the container */
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 1px solid #444; /* Darker border for the input */
+  border-radius: 10px;
+  background-color: #ffffff; /* Match input background to container */
+  color: #020202; /* White text for better contrast */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow around the search container */
+}
+
+input[type="text"]::placeholder {
+  color: #020202; /* Light gray placeholder text for better readability */
+}
+
+table {
+  width: 100%; /* Ensure table takes full width */
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Background color with opacity */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+  border: 1px outset #5fa3e7;
+  color: #000000;
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 1px solid #444; /* Darker border color */
+}
+
+th {
+  background-color: #1976d2; /* Darker header background */
+  font-weight: 600; /* Make header text bold */
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  padding-left: 70px;
+  padding-bottom: 10px;
+}
+
+.footer-Button {
+  padding-top: 10px;
+  gap: 1px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Background color with opacity */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+}
+
+.spacing-on-button {
+  padding-top: 8px;
+}
+
+@media (max-width: 600px) {
+  th,
+  td {
+    padding: 8px 4px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+}
